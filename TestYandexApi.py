@@ -2,7 +2,7 @@ import unittest
 import requests
 
 def new_folder_in_disk(name_folder):
-        get_headers= {'Content-Type': 'application/json', 'Authorization': 'AQAAAAA7dL1qAADLW7rc4E71U0nggjFikUC4AYk'}
+        get_headers= {'Content-Type': 'application/json', 'Authorization': 'key'}
         href = 'https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2F'
         response = requests.put(href+name_folder, headers=get_headers)
         return response.status_code
